@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            width: 150px;
+            height: 100px;
+            background: lightsalmon;
+            transform-origin: left top; /* cambia el punto de origen de la transformación */
+            transform-origin: right top;
+            transform-origin: right bottom; /* cambia el punto de origen de la transformación */
+        }
+        .circle:hover {
+            transform: rotate(90deg); 
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
