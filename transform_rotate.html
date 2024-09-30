@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            width: 150px;
+            height: 100px;
+            background: lightsalmon;
+        }
+        .circle:hover {
+            transform: rotate(20deg); /* gira el objeto en el plano X */
+            transform: rotateY(20deg); /* gira el objeto en el plano Y */
+            transform: rotate(1000deg); /* solo se ve el residuo de 1000/360 = 280, puesto que hizo 2,7 giros en su eje */
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
