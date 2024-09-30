@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shadow {
+            width: 100px;
+            height: 100px;
+            background: lightgray;
+            border-radius: 50%;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to left, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border-radius: 50%;
+        }
+        .circle:hover {
+            transform: translateX(-20px);
+            transform: translateY(-20px);
+            transform: translate(-50px, -50px);
+            /* Solo le hace caso al último transform por como funciona CSS */
+        }
+    </style>
+</head>
+<body>
+    <div class="shadow">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
