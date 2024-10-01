@@ -10,7 +10,7 @@
             width: 100px;
             height: 100px;
             border: 5px solid hotpink;
-            perspective: 100px; /* define la perspectiva de la vista 3D */
+            perspective: 100px; /* define la perspectiva de la vista 3D a 100px de distancia del usuario */
         }
         .item {
             position: absolute;
@@ -19,8 +19,8 @@
             background: papayawhip;
             border: 3px dotted yellow;
             opacity: 0.5;
-            transform-style: preserve-3d; /* define que los elementos hijos mantendrán su posición en el espacio 3D */
-            transform: rotateX(45deg); /* rota el elemento en el eje X */
+            transform-style: preserve-3d; /* se asegura que los elementos hijos mantendrán su posición en el espacio 3D */
+            transform: rotateX(45deg); /* rota el elemento en el eje X que lo atraviesa */
         }
     </style>
 </head>
