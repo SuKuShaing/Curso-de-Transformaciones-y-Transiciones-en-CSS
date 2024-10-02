@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            height: auto;
+            background: papayawhip;
+            display: flex;
+            justify-content: space-between;
+            margin: 30px;
+        }
+        .container:hover .box{
+            transform: rotate(45deg);
+            border-radius: 50%;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border-radius: 0%;
+        }
+        .box1 {
+            background: lightcoral;
+            transition: all 500ms; /* Se aplica la transición a todas las propiedades */
+            /*transition: transform 1s;  Se aplica la transición solo a la propiedad transform */
+        }
+        .box2 {
+            background: salmon;
+            transition: all 1s ease-in-out; /* Se aplica la transición solo a la propiedad transform */
+        }
+        .box3 {
+            background: darksalmon;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+</html>
