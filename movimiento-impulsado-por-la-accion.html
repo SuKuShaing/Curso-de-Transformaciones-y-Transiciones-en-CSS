@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            background: plum;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: transform 3s linear; /* cuando se salga del hover, la transición será de 3s */
+        }
+        .circle:hover{
+            transform: translateX(200px);
+            transition: transform 0.5s linear; /* cuando se haga hover, la transición será de 0.5s */
+        }
+        /* entonces avanza en un tiempo y retrocede en el otro tiempo distinto */ 
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
