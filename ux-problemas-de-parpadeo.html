@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: palevioletred;
+            border-radius: 50%;
+        }
+        .container:hover .item {
+            transform: translateY(-20px);
+        }
+        .item {
+            background-color: palegoldenrod;
+        }
+    </style>
+    <!-- Para que no parpadee, se agregó un padre y el padre cuando se le hace hover, el hijo se mueve -->
+</head>
+<body>
+    <div class="container one">
+        <div class="item"></div>
+    </div>
+</body>
+</html>

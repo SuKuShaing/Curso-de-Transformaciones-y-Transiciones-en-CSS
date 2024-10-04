@@ -22,7 +22,7 @@
             opacity: 0;
             position: absolute;
             transition: opacity 0.5s;
-            transition-delay: 400ms;
+            transition-delay: 400ms; /* Para que no se cierre inmediatamente */
         }
         .nav li:hover > ul {
             opacity: 1;
@@ -34,8 +34,8 @@
         .nav li ul li{
             right: -50px;
         }
-
     </style>
+    <!-- El objetivo de la clase era mostrar que al agregar tiempo de espera, podemos evitar que los menús se cierren automáticamente -->
 </head>
 <body>
     <ul class="nav">
